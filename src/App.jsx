@@ -35,11 +35,13 @@ export default function App() {
     setBudgetInput('')
   }
 
+  const logoSrc = `${import.meta.env.BASE_URL}mediak-logo.png`
+
   return (
     <div className="page">
       <main className="calculator">
         <div className="calculator-header">
-          <img className="brand-logo" src="/mediak-logo.png" alt="media.k" />
+          <img className="brand-logo" src={logoSrc} alt="media.k" />
           <div>
             <p className="eyebrow">Media.k</p>
             <h1>Calculadora de Imposto do Meta Ads</h1>
